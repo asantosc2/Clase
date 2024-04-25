@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE canciones[
+	<!ELEMENT canciones (cancion+,compositores+,sello+,artista+)>
+	<!ELEMENT cancion (titulo,compositores+,productores+,sello,artista)>
+	<!ELEMENT compositores (compositor+)>
+	<!ELEMENT compositor (nombre_compositor,apellidos_compositor)>
+	<!ELEMENT productores (productor)>
+	<!ELEMENT productor (nombre_productor,apellidos_productor)>
+	<!ELEMENT titulo (#PCDATA)> 
+	<!ELEMENT nombre_compositor (#PCDATA)>
+	<!ELEMENT nombre_productor (#PCDATA)>
+	<!ELEMENT apellidos_compositor (#PCDATA)>
+	<!ELEMENT apellidos_productor (#PCDATA)>
+	<!ELEMENT sello (#PCDATA)>
+	<!ELEMENT artista (#PCDATA)>
+	<!ATTLIST cancion duracion CDATA #REQUIRED>
+	<!ATTLIST cancion anio CDATA #REQUIRED>
+]>
+<canciones>
+	<cancion duracion="4:47" anio="2008">
+		<titulo> Give It 21 Me </titulo>
+	<compositores>
+		<compositor>
+			<nombre_compositor> Pharrell </nombre_compositor>
+			<apellidos_compositor> Williams </apellidos_compositor>
+		</compositor>
+	</compositores>
+	<productores>
+		<productor>
+			<nombre_productor> Pharrell </nombre_productor>
+			<apellidos_productor> Williams </apellidos_productor>
+		</productor>
+	</productores>
+	<sello> Warner Bros Records </sello>
+	<artista> Madonna </artista>
+	</cancion>
+	<cancion duracion="4:35" anio="2007">
+		<titulo> Malbec </titulo>
+	<compositores>
+		<compositor>
+			<nombre_compositor>Kuk</nombre_compositor>
+			<apellidos_compositor>Harrel</apellidos_compositor>
+		</compositor>
+		<compositor>
+			<nombre_compositor> Christopher </nombre_compositor>
+			<apellidos_compositor>Stewart</apellidos_compositor>
+		</compositor>
+	</compositores>
+	<productores>
+		<productor>
+			<nombre_productor> Christopher</nombre_productor>
+			<apellidos_productor>Stewart</apellidos_productor>
+		</productor>
+	</productores>
+	<sello> Def Jam </sello>
+	<artista> Rihanna</artista>
+	</cancion>
+</canciones>
